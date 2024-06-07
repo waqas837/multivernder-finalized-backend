@@ -6,7 +6,7 @@ if (mongoose.connection.readyState === 1) {
 } else {
   mongoose
     .connect(
-      "mongodb+srv://bughlani:bughlani@cluster0.9qki3lg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0/ecommerce"
+      "mongodb+srv://bughlani:bughlani@cluster0.9qki3lg.mongodb.net/ecommerce?retryWrites=true&w=majority&appName=Cluster0"
     )
     .then(() => console.log("db connected"))
     .catch((e) => console.log(e))
